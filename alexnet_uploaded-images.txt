@@ -1,0 +1,71 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_02.jpg  label:                        dog
+ 2 key:                     Dog_01.jpg  label:                        dog
+ 3 key:                  Chair_01.jfif  label:                      chair
+ 4 key:                    Bird_01.jpg  label:                       bird
+
+     MATCH:
+
+                   Bird_01.jpg: 
+Real:                       bird   Classifier: indigo bunting, indigo finch, indigo bird, passerina cyanea
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                 sussex spaniel
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               brittany spaniel
+
+                 Chair_01.jfif: 
+Real:                      chair   Classifier:          studio couch, day bed
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                   Bird_01.jpg: 
+Real:                       bird   Classifier: indigo bunting, indigo finch, indigo bird, passerina cyanea  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                 sussex spaniel  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               brittany spaniel  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                 Chair_01.jfif: 
+Real:                      chair   Classifier:          studio couch, day bed  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+Results: alexnet
+Number of Images: 4
+Number of Dog Images: 2
+Number of "Not-a" Dog Image: 2
+pct_correct_dogs: 100.0
+pct_correct_breed: 0.0
+pct_correct_notdogs: 100.0
+pct_match: 25.0
+Image Dog_02.jpg classified incorrectly as sussex spaniel
+Image Dog_01.jpg classified incorrectly as brittany spaniel
+
+** Total Elapsed Runtime: 0:0:0
